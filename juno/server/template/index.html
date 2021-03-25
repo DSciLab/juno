@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ static_url("css/style.css") }}">
+        <script>
+            var ws_addr = "{{ ws_addr }}";
+        </script>
+        <script src="{{ static_url("js/juno.js") }}"></script>
+        <script src="{{ static_url("js/main.js") }}"></script>
+    </head>
+    <body>
+        <div class="header">
+            <ul class="headerList">
+                <li><a href="#plot">Plot</a></li>
+                <li><a href="#image">Image</a></li>
+            </ul>
+        </div>
+        <div class="content" id="mainContainer">
+            <div class="container" id="plotContainer">plot</div>
+            <div class="container" id="imageContainer">image</div>
+        </div>
+    </body>
+</html>

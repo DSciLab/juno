@@ -1,0 +1,16 @@
+#! /bin/env python
+from cfg import  Opts
+from juno.server import Server
+
+
+def main(opt):
+    server = Server(opt)
+    server.start()
+
+
+if __name__ == '__main__':
+    Opts.add_int('port', 8080)
+    Opts.add_string('hostname', 'localhost')
+
+    opt = Opts()
+    main(opt)
